@@ -1,0 +1,50 @@
+:root {
+    --main-font-color: #fff;
+    --background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background: var(--background);
+    font-family: sans-serif;
+    color: var(--main-font-color);
+}
+
+.location,
+.temperature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 30vh;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+    margin: .8em;
+    font-size: 2rem;
+}
+
+.degree-section h2 {
+    font-size: 2.2rem;
+}
